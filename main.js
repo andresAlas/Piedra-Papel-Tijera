@@ -8,15 +8,15 @@ var piedra = 0;
 var papel = 1;
 var tijera = 2;
 
-var opciones = [piedra, papel, tijera];
+var opciones = ["piedra", "papel", "tijera"];
 
-var opcionesUsuario;
+var opcionUsuario;
 var opcionMaquina = aleatorio(0,2);
 
-opcionesUsuario = prompt("¿Qué eliges?\nPiedra: 0\nPapel: 1\nTijera: 2", 0);
+opcionesUsuario = prompt("¿Qué eliges?\n Piedra: 0\n Papel: 1\n Tijera: 2", 0);
 
-alert("Elegiste" + opciones[opcionesUsuario]);
-alert("Javacript eligio" opciones[opcionMaquina]);
+alert("Elegiste: " + opciones[opcionesUsuario]);
+alert("Javacript eligio: " + opciones[opcionMaquina]);
 
 if(opcionUsuario == piedra)
 {
@@ -33,6 +33,7 @@ if(opcionUsuario == piedra)
         alert("Ganaste!");
     }
 }
+
 else if(opcionUsuario == papel)
 {
     if(opcionMaquina == piedra)
@@ -48,6 +49,7 @@ else if(opcionUsuario == papel)
         alert("Perdiste!");
     }
 }
+
 else if(opcionUsuario == tijera)
 {
     if(opcionMaquina == piedra)
@@ -63,7 +65,7 @@ else if(opcionUsuario == tijera)
         alert("Empate!");
     }
 }
-else
+/*else
 {
     alert("¿Que Putas");
-}
+}*/
