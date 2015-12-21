@@ -1,0 +1,29 @@
+[33mcommit 8a7d39b21d24c96c876ed3f54db52bd170e34450[m
+Author: andres <andres.alas@hotmail.com>
+Date:   Mon Dec 21 16:06:13 2015 -0600
+
+    agrege una condicional y adentro de la condicional un alert
+
+[33mcommit 35e2f3534fce0e244dbc2f509093527273d0b9b4[m
+Author: andres <andres.alas@hotmail.com>
+Date:   Sat Dec 19 21:07:52 2015 -0600
+
+    hice unos arreglos
+
+[33mcommit f4dca9417857f274de5114dbb0d7759327338787[m
+Author: andres <andres.alas@hotmail.com>
+Date:   Sat Dec 19 20:48:35 2015 -0600
+
+    Agrege las variables y condicionales
+
+[33mcommit d4499339a66b62344a49a7434ef22801e22088cc[m
+Author: andres <andres.alas@hotmail.com>
+Date:   Sat Dec 19 20:35:12 2015 -0600
+
+    Agrege variables Piedra, Papel, Tijera
+
+[33mcommit 5b76a593d10b0182d99d884d0d7259ac33811338[m
+Author: andres <andres.alas@hotmail.com>
+Date:   Sat Dec 19 20:31:35 2015 -0600
+
+    Iniciamos Piedra, Papel, Tijera
