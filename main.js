@@ -7,14 +7,11 @@ function aleatorio(maximo, minimo)
 var piedra = 0;
 var papel = 1;
 var tijera = 2;
-
 var opciones = ["piedra", "papel", "tijera"];
-
 var opcionUsuario;
 var opcionMaquina = aleatorio(0,2);
 
 opcionesUsuario = prompt("¿Qué eliges?\n Piedra: 0\n Papel: 1\n Tijera: 2", 0);
-
 alert("Elegiste: " + opciones[opcionesUsuario]);
 alert("Javacript eligio: " + opciones[opcionMaquina]);
 
@@ -65,7 +62,7 @@ else if(opcionUsuario == tijera)
         alert("Empate!");
     }
 }
-/*else
+else
 {
     alert("¿Que Putas");
-}*/
+}
