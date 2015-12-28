@@ -11,116 +11,40 @@ var lagarto = 3;
 var spock = 4;
 var opciones = ["piedra", "papel", "tijera", "lagarto", "spock"];
 var opcionUsuario;
-var opcionMaquina = aleatorio(0,2);
+var opcionMaquina = aleatorio(0,4);
 
 opcionUsuario = prompt("¿Qué eliges?\n Piedra: 0\n Papel: 1\n Tijera: 2\n Lagarto: 3\n  Spock: 4", 0);
 alert("Elegiste: " + opciones[opcionUsuario]);
 alert("Javacript eligio: " + opciones[opcionMaquina]);
 
-if(opcionUsuario == piedra)
-{
-    if(opcionMaquina == opcionUsuario)
-    {
-        alert("Empate!");
-    }
-    else if(opcionMaquina == papel)
-    {
-        alert("Perdiste :( ");
-    }
-    else if(opcionMaquina == tijera)
-    {
-        alert("Ganaste!");
-    }
-    else if(opcionMaquina == lagarto)
-    {
-        alert("Ganaste");
-    }
-    else if(opcionMaquina == spock)
-    {
-        alert("Perdiste");
-    }
-}
+if(opcionMaquina == opcionUsuario){ alert("Empate")};
 
-else if(opcionUsuario == papel)
-{
-    if(opcionMaquina == piedra)
-    {
-        alert("Ganaste!");
-    }
-    else if(opcionMaquina == tijera)
-    {
-        alert("Perdiste!");
-    }
-    else if(opcionMaquina == lagarto)
-    {
-        alert("Perdiste");
-    }
-    else if(opcionMaquina == spock)
-    {
-        alert("Ganaste");
-    }
-}
+if(opcionUsuario == piedra && opcionMaquina == tijera){alert("Ganaste")};
+if(opcionUsuario == piedra && opcionMaquina == lagarto){alert("Ganaste")};
 
-else if(opcionUsuario == tijera)
-{
-    if(opcionMaquina == piedra)
-    {
-        alert("Perdiste!");
-    }
-    else if(opcionMaquina == papel)
-    {
-        alert("Ganaste!");
-    }
-    else if(opcionMaquina == lagarto)
-    {
-        alert("Perdiste");
-    }
-    else if(opcionMaquina == spock)
-    {
-        alert("Ganaste");
-    }
-}
+if(opcionUsuario == papel && opcionMaquina == piedra){alert("Ganaste")};
+if(opcionUsuario == papel && opcionMaquina == spock){alert("Ganaste")};
 
-else if(opcionUsuario == lagarto)
-{
-    if(opcionMaquina == piedra)
-    {
-        alert("Perdiste");
-    }
-    else if(opcionMaquina == papel)
-    {
-        alert("Ganaste");
-    }
-    else if(opcionMaquina == tijera)
-    {
-        alert("Perdiste");
-    }
-    else if(opcionMaquina == spock)
-    {
-        alert("Ganaste");
-    }
-}
+if(opcionUsuario == tijera && opcionMaquina == papel){alert("Ganaste")};
+if(opcionUsuario == tijera && opcionMaquina == spock){alert("Ganaste")};
 
-else if(opcionUsuario == spock)
-{
-    if(opcionMaquina == piedra)
-    {
-        alert("Ganaste");
-    }
-    else if(opcionMaquina == papel)
-    {
-        alert("Perdiste");
-    }
-    else if(opcionMaquina == tijera)
-    {
-        alert("Ganaste");
-    }
-    else if(opcionMaquina == lagarto)
-    {
-        alert("Perdiste");
-    }
-}
-else
-{
-    alert("¿Que Putas");
-}
+if(opcionUsuario == lagarto && opcionMaquina == papel){alert("Ganaste")};
+if(opcionUsuario == lagarto && opcionMaquina == spock){alert("Ganaste")};
+
+if(opcionUsuario == spock && opcionMaquina == piedra){alert("Ganaste")};
+if(opcionUsuario == spock && opcionMaquina == tijera){alert("Ganaste")};
+
+if(opcionUsuario == piedra && opcionMaquina == papel){alert("Perdiste")};
+if(opcionUsuario == piedra && opcionMaquina == spock){alert("Perdiste")};
+
+if(opcionUsuario == papel && opcionMaquina == tijera){alert("Perdiste")};
+if(opcionUsuario == papel && opcionMaquina == lagarto){alert("Perdiste")};
+
+if(opcionUsuario == tijera && opcionMaquina == piedra){alert("Perdiste")};
+if(opcionUsuario == tijera && opcionMaquina == spock){alert("Perdiste")};
+
+if(opcionUsuario == lagarto && opcionMaquina == tijera){alert("Perdiste")};
+if(opcionUsuario == lagarto && opcionMaquina == piedra){alert("Perdiste")};
+
+if(opcionUsuario == spock && opcionMaquina == lagarto){alert("Perdiste")};
+if(opcionUsuario == spock && opcionMaquina == papel){alert("Perdiste")};
