@@ -48,3 +48,20 @@ if(opcionUsuario == lagarto && opcionMaquina == piedra){alert("Perdiste")};
 
 if(opcionUsuario == spock && opcionMaquina == lagarto){alert("Perdiste")};
 if(opcionUsuario == spock && opcionMaquina == papel){alert("Perdiste")};
+
+function inicio()
+{
+    canvas = document.getElementById("canvas");
+    rectangulo = canvas.getContext("2d");
+
+    rectangulo.beginPath();
+    rectangulo.moveTo(0, 0);
+    rectangulo.lineTo(300, 0);
+    rectangulo.lineTo(300, 300);
+    rectangulo.lineTo(0, 300);
+    rectangulo.lineTo(0, 0);
+    rectangulo.lineWidth = 5;
+    rectangulo.strokeStyle = "black";
+    rectangulo.stroke();
+    rectangulo.closePath();
+}
