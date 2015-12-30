@@ -56,8 +56,8 @@ function inicio()
 
     rectangulo.beginPath();
     rectangulo.moveTo(0, 0);
-    rectangulo.lineTo(300, 0);
-    rectangulo.lineTo(300, 300);
+    rectangulo.lineTo(600, 0);
+    rectangulo.lineTo(600, 300);
     rectangulo.lineTo(0, 300);
     rectangulo.lineTo(0, 0);
     rectangulo.lineWidth = 5;
