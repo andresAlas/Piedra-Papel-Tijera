@@ -13,6 +13,23 @@ var opciones = ["piedra", "papel", "tijera", "lagarto", "spock"];
 var opcionUsuario;
 var opcionMaquina = aleatorio(0,4);
 
+function inicio()
+{
+    canvas = document.getElementById("canvas");
+    rectangulo = canvas.getContext("2d");
+
+    rectangulo.beginPath();
+    rectangulo.moveTo(0, 0);
+    rectangulo.lineTo(600, 0);
+    rectangulo.lineTo(600, 300);
+    rectangulo.lineTo(0, 300);
+    rectangulo.lineTo(0, 0);
+    rectangulo.lineWidth = 5;
+    rectangulo.strokeStyle = "black";
+    rectangulo.stroke();
+    rectangulo.closePath();
+}
+
 opcionUsuario = prompt("¿Qué eliges?\n Piedra: 0\n Papel: 1\n Tijera: 2\n Lagarto: 3\n  Spock: 4", 0);
 alert("Elegiste: " + opciones[opcionUsuario]);
 alert("Javacript eligio: " + opciones[opcionMaquina]);
@@ -49,19 +66,3 @@ if(opcionUsuario == lagarto && opcionMaquina == piedra){alert("Perdiste")};
 if(opcionUsuario == spock && opcionMaquina == lagarto){alert("Perdiste")};
 if(opcionUsuario == spock && opcionMaquina == papel){alert("Perdiste")};
 
-function inicio()
-{
-    canvas = document.getElementById("canvas");
-    rectangulo = canvas.getContext("2d");
-
-    rectangulo.beginPath();
-    rectangulo.moveTo(0, 0);
-    rectangulo.lineTo(600, 0);
-    rectangulo.lineTo(600, 300);
-    rectangulo.lineTo(0, 300);
-    rectangulo.lineTo(0, 0);
-    rectangulo.lineWidth = 5;
-    rectangulo.strokeStyle = "black";
-    rectangulo.stroke();
-    rectangulo.closePath();
-}
