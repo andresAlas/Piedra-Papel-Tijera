@@ -17,6 +17,8 @@ function inicio()
 {
     canvas = document.getElementById("canvas");
     rectangulo = canvas.getContext("2d");
+    var t = document.getElementById("texto");
+    var b = document.getElementById("boton");
 
     rectangulo.beginPath();
     rectangulo.moveTo(0, 0);
