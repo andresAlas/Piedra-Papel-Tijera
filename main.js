@@ -42,7 +42,7 @@
          opcionUsuario == spock && opcionMaquina == piedra ||
          opcionUsuario == spock && opcionMaquina == tijera)
       {
-         pDos.innerHTML = "Ganaste! 😄 😁 💪";
+         pDos.innerHTML = "Ganaste! 😄 😁 😊 😆 😎 💪";
       }  
 
       else if(opcionUsuario == piedra && opcionMaquina == papel ||
@@ -56,7 +56,7 @@
          opcionUsuario == spock && opcionMaquina == lagarto ||
          opcionUsuario == spock && opcionMaquina == papel)
       {
-         pDos.innerHTML = "Perdiste! 😂 😭 😵 🖕";
+         pDos.innerHTML = "Perdiste! 😂 😭 😵 😳 😞 😟";
       }
 
    }

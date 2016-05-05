@@ -1,4 +1,51 @@
-body {
-	text-align: center;
-	font-family: 'Josefin Sans', sans-serif;
+* {
+	margin: 0;
+	padding: 0;
 }
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+}
+
+header, .main, .select {
+	width: 90%;
+	margin: 20px auto;	
+	background: #ccc;	
+}
+
+.main {
+	padding: 10px;
+	background: #fff;
+}
+
+.select {
+	background: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+.select p {
+	padding: 20px;
+}
+
+.select input {
+	
+	background: #004A91;
+	color: #fff;
+	padding: 10px 39px;
+	border: 1px solid #000;
+}
+
+.select select{
+	background: #004A91;
+	color: #fff;
+	padding: 10px 59px;
+	border: 1px solid #000;
+}
+
+.select input:hover {
+	background: #005AE8;
+
+}
+
